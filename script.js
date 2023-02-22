@@ -40,7 +40,7 @@ btnHold.addEventListener("click", () => {
   score[activePlayer] += current;
   if (gameOver) {
     audio.play()
-    if (score[activePlayer] < 10) {
+    if (score[activePlayer] < 100) {
       document.querySelector(`#score--${activePlayer}`).textContent =
         score[activePlayer];
       activeFunc();
